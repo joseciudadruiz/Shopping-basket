@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Shopping Cart</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/applications.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <section class="title">
+        <div class="row">
+          <div class="cart-title">
+          <h1>Shopping Cart</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_headers">
+        <div class="row">
+          <h3 class="col-xs-3">Product</h3>
+          <h3 class="col-xs-3">Price</h3>
+          <h3 class="col-xs-3">Quantity</h3>
+          <h3 class="col-xs-3">Total</h3>
+        </div>
+      </section>
+
+      <section id="items-list">
+        <div class="row items">
+          <div class="item-name col-xs-3">Milk</div>
+          <div class="item-price col-xs-3">£2.00</div>
+          <div class="item qty col-xs-3">
+            <label>QTY</label>
+            <input class="quantity" type="number">
+          </div>
+          <div class="col-xs-1">
+            <button type="button" class="remove btn btn-primary">Remove</button>
+          </div>
+          <div class="item-subtotal col-xs-2">£__.__</div>
+        </div>
+
+        <div class="row items">
+          <div class="item-name col-xs-3">Whole Chicken</div>
+          <div class="item-price col-xs-3">£3.00</div>
+          <div class="item qty col-xs-3">
+            <label>QTY</label>
+            <input class="quantity" type="number">
+          </div>
+          <div class="col-xs-1">
+            <button type="button" class="remove btn btn-primary">Remove</button>
+          </div>
+          <div class="item-subtotal col-xs-2">£__.__</div>
+        </div>
+
+        <div class="row items">
+          <div class="item-name col-xs-3">Rice</div>
+          <div class="item-price col-xs-3">£5.00</div>
+          <div class="item qty col-xs-3">
+            <label>QTY</label>
+            <input class="quantity" type="number">
+          </div>
+          <div class="col-xs-1">
+            <button type="button" class="remove btn btn-primary">Remove</button>
+          </div>
+          <div class="item-subtotal col-xs-2">£__.__</div>
+        </div>
+
+        <div class="row items">
+          <div class="item-name col-xs-3">Coffe</div>
+          <div class="item-price col-xs-3">£7.00</div>
+          <div class="item qty col-xs-3">
+            <label>QTY</label>
+            <input class="quantity" type="number">
+          </div>
+          <div class="col-xs-1">
+            <button type="button" class="remove btn btn-primary">Remove</button>
+          </div>
+          <div class="item-subtotal col-xs-2">£__.__</div>
+        </div>
+
+        <div class="row items">
+          <div class="item-name col-xs-3">Salmon</div>
+          <div class="item-price col-xs-3">£24.00</div>
+          <div class="item qty col-xs-3">
+            <label>QTY</label>
+            <input class="quantity" type="number">
+          </div>
+          <div class="col-xs-1">
+            <button type="button" class="remove btn btn-primary">Remove</button>
+          </div>
+          <div class="item-subtotal col-xs-2">£__.__</div>
+        </div>
+
+        <div class="row items">
+          <div class="item-name col-xs-3">Beef</div>
+          <div class="item-price col-xs-3">£48.00</div>
+          <div class="item qty col-xs-3">
+            <label>QTY</label>
+            <input class="quantity" type="number">
+          </div>
+          <div class="col-xs-1">
+            <button type="button" class="remove btn btn-primary">Remove</button>
+          </div>
+          <div class="item-subtotal col-xs-2">£__.__</div>
+        </div>
+
+        <div class="row items">
+          <div class="item-name col-xs-3">Bread</div>
+          <div class="item-price col-xs-3">£1.00</div>
+          <div class="item qty col-xs-3">
+            <label>QTY</label>
+            <input class="quantity" type="number">
+          </div>
+          <div class="col-xs-1">
+            <button type="button" class="remove btn btn-primary">Remove</button>
+          </div>
+          <div class="item-subtotal col-xs-2">£__.__</div>
+        </div>
+
+        <div class="row items">
+          <div class="item-name col-xs-3">Seafood variety</div>
+          <div class="item-price col-xs-3">£30.00</div>
+          <div class="item qty col-xs-3">
+            <label>QTY</label>
+            <input class="quantity" type="number">
+          </div>
+          <div class="col-xs-1">
+            <button type="button" class="remove btn btn-primary">Remove</button>
+          </div>
+          <div class="item-subtotal col-xs-2">£__.__</div>
+        </div>
+        <div class="row item-new">
+          <div class="col-xs-3">
+            <input placeholder="Item" id="name">
+          </div>
+          <div class="col-xs-3">
+            <input placeholder="£?" id="cost">
+          </div>
+          <div class="col-xs-3">
+            <button type="button" class="btn btn-warning" id="adding">Add</button>
+          </div>
+        </div>
+        <!-- <div class="row">
+        <div class="col-xs-4 col-xs-offset-3">
+          <button id="calc-prices-button" type="button" data-button='{"id": "3424"}' class="btn btn-success">
+            Fork The Repo
+          </button>
+        </div>
+      </div> -->
+        <div class="row col-xs-3">
+          <h3 class="total-price-label">Total Price:</h3>
+          <div id="total-price"><strong>£0</strong></div>
+        </div>
+
+      </section>
+    </div>
+  </body>
+</html>
